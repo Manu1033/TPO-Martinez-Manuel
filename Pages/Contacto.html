@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Ing. Raúl Martínez</title>
+    
+    <link rel="stylesheet" href="../Styles/Contacto.css">
+    <link rel="stylesheet" href="../Styles/General.css">
+    <script src="https://kit.fontawesome.com/b52b7c71b2.js" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+    <nav class="BarraPrincipal">
+            <img id="logo" src="../Img/Logo-RM2.png" alt="Logo RM">
+            <ul>
+                <li class = "Paginas"><a href="../index.html">Inicio</a></li>
+                <li class = "Paginas"><a href="Servicios.html">Servicios</a></li>
+                <li id="activo"><a href="">Contacto</a></li>
+            </ul>
+    </nav>
+    <header>
+        <h1>Contacto</h1>
+    </header>
+    <section class="Contacto">
+        <form action="" class="formulario" id="formulario">
+			<!-- Grupo: Nombre -->
+			<div class="formulario__grupo" id="grupo__nombre">
+				<label for="nombre" class="formulario__label">Nombre</label>
+				<div class="formulario__grupo-input">
+					<input type="text" class="formulario__input" name="nombre" id="nombre" placeholder="Nombre">
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">El nombre no puede contener números, ni estar en blanco</p>
+			</div>
+
+			<!-- Grupo: Apellido -->
+			<div class="formulario__grupo" id="grupo__apellido">
+				<label for="apellido" class="formulario__label">Apellido</label>
+				<div class="formulario__grupo-input">
+					<input type="text" class="formulario__input" name="apellido" id="apellido" placeholder="Apellido">
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">El apellido no puede contener números, ni estar en blanco.</p>
+			</div>
+
+            <!-- Grupo: Asunto -->
+			<div class="formulario__grupo" id="grupo__asunto">
+				<label for="asunto" class="formulario__label">Asunto</label>
+				<div class="formulario__grupo-input">
+					<input type="text" class="formulario__input" name="asunto" id="asunto" placeholder="Asunto">
+				</div>
+			</div>
+            
+			<!-- Grupo: Correo Electronico -->
+			<div class="formulario__grupo" id="grupo__correo">
+				<label for="correo" class="formulario__label">Correo Electrónico</label>
+				<div class="formulario__grupo-input">
+					<input type="email" class="formulario__input" name="correo" id="correo" placeholder="correo@correo.com">
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">El correo solo puede contener letras, numeros, puntos, guiones y guion bajo.</p>
+			</div>
+
+            <!-- Grupo: Mensaje -->
+			<div class="formulario__grupo" id="grupo__mensaje">
+				<label for="mensaje" class="formulario__label">Mensaje</label>
+				<div class="formulario__grupo-input msj">
+					<!-- <textarea type="text" class="formulario__input" name="mensaje" id="mensaje" placeholder="Mensaje. Máximo 200 caracteres." maxlength="200"></textarea> -->
+					<input type="text" class="formulario__input" name="mensaje" id="mensaje" placeholder="Mensaje. Máximo 200 caracteres." maxlength="200">
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">El Mensaje no puede estar vacío.</p>
+			</div>
+
+
+			<div class="formulario__grupo formulario__grupo-btn-enviar">
+				<button type="submit" class="formulario__btn">Enviar</button>
+
+				<div class="formulario__mensaje" id="formulario__mensaje">
+					<p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor rellena el formulario correctamente. </p>
+				</div>
+				
+				<p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado exitosamente!</p>
+			</div>
+		</form>
+	</main>
+      
+
+	<iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4455.342170798646!2d-58.255345680797355!3d-37.85086778752799!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x959aaf17b3d040e1%3A0x221accdfd53449cf!2sOCA%20SRL!5e0!3m2!1ses!2sar!4v1634659870447!5m2!1ses!2sar" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+    </section>
+
+    <footer>
+        <div id="datos">
+            <p>Av Siempre Viva 666 - Balcarce</p>
+            <p>Tel. 111555222333</p>
+            <p>ifno@codoacodo.bue.edu.ar</p>
+        </div>
+
+        <div id="redes">
+            <ul>
+                <li><a class="Social" href="http://facebook.com"><i class="fab fa-facebook"></i></a></li>
+                <li><a class="Social" href="http://twitter.com"><i class="fab fa-twitter"></i></a></li>
+                <li><a class="Social" href="http://instagram.com"><i class="fab fa-instagram"></i></a></li>
+                <li><a class="Social" href="http://google.com"><i class="fab fa-google"></i></a></li>
+            </ul>
+        </div>
+
+    </footer>
+
+
+    <script src="../JS/Validacion.js"></script>
+</body>
+</html>

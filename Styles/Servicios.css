@@ -1,0 +1,97 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-image: url(../Img/Fondo.jfif);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+header{
+	display: flex;
+	justify-content: center;
+    align-items: center;
+    height: 5vw;
+    
+}
+h1{
+	font-size: 2.5rem;
+}
+.Servicio-Container{
+    height: 40vh;
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-around;
+    /* border: solid 1px;
+    border-color: rgba(115, 124, 61, 0.562); */
+    background-color: #646d328f;
+}
+
+.Cont1{
+    margin-top: 0%;
+}
+
+.Cont6{
+    margin-bottom: 5%;
+}
+
+.Cont2, .Cont4, .Cont6{
+    flex-direction: row-reverse;
+    background-color: #a2ad6978;
+}
+
+.Servicio-Item{
+    width: 45%;
+    align-self: center;
+}
+
+.Servicio-Img{
+    align-self: center;
+    height: 90%;
+    width: 45%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-clip: content-box;
+    /* background-attachment: fixed; */
+}
+
+.Servicio-Img:target {
+    display: block;
+    position: relative;
+    top: -12vh; 
+    transform: translateY(12vh);
+    transition-delay: 0.1s;
+} 
+
+#PAT{
+    background-image: url(../Img/pat.jpg);
+}
+
+#MED{
+    background-image: url(../Img/medidores.jfif);
+}
+
+#HAB{
+    background-image: url(../Img/habilitacion.jpg);
+}
+#PLA{
+    background-image: url(../Img/planos.jpg);
+}
+#MON{
+    background-image: url(../Img/montaje.jpg);
+}
+#GES{
+    background-image: url(../Img/energia.jpg);
+}
+
+h3{
+    font-size: 1.5rem;
+    color:black;
+    
+}
+.ServiciosOfrecidos p{
+    font-size: 1.5rem;
+    color: rgb(48, 9, 48);
+}
