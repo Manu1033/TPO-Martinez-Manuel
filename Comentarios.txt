@@ -1,0 +1,15 @@
+# TPO-Martinez-Manuel
+
+El trabajo consta de tres páginas: INICIO- SERVICIOS - CONTACTO.
+
+El formulario se encuentra en la pagina CONTACTO con la validación en JS, en el archivo "Validación.js".
+
+Se utilizó un iframe para poner un mapa en la sección CONTACTO.
+
+Se utilizaron los iconos de FontAwesome tamto para las redes sociales del Footer como para los servicios que se presentan en INICIO.
+
+Las páginas son responsive porque estan maquetadas tanto con Flexbox como con Grid, pero la que tiene los puntos de corte es CONTACTO.
+
+Utilice animaciones en dos lugares, una es el icono "RM" en la navbar de INICIO y la otra es una AOS los servicios que se presentan en HOME (ambas estan en Animaciones.css). Para la AOS use Para_animacion.js, donde utilizo un IntersectionObserver para saber cuando comenzar con la animación.
+
+Se utilizaron transfomaciones en los servicios que se presentan en HOME (en el hover hacen un giro 360°) y en las imagenes de la pagina SERVICIOS. Esta última se utiliza porque al tener el navbar sticky, cuando quiero ir desde el INICIO al servicio seleccionado, quedaba detras de la barra.
